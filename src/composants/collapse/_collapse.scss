@@ -1,0 +1,158 @@
+.description{
+    margin-bottom: 15px;
+    
+    &__collapse{
+        .collapse__container{
+            
+            .collapse, .ouvert__collapse{
+                position: relative;
+                top: 10px;
+                background-color: #FF6060;
+                color: #FFFFFF;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between; 
+                border-radius: 5px;
+                width: 100%;
+                height: 30px;
+                cursor: pointer;
+                
+                &__title{
+                    margin: 0;
+                    padding: 5px 0 5px 15px;
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 142.6%;
+                }
+                img{
+                    object-fit:contain;
+                    width: 25px;
+                    padding-right: 7px;
+                }
+                
+                &__text{
+                    list-style: none;
+                    margin: 0px;
+                    padding: 20px 10px 15px ;
+                    background-color: #F7F7F7;
+                    width: 100%;
+                    border-radius: 0 0 5px 5px;
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 142.6%;
+                    display: inline-block;
+                    color: #FF6060;
+                    
+                    ul{
+                        margin: 0;
+                        padding: 0;
+                    }
+                    
+                    &__list{
+                        list-style-type: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+//********************************** DESKTOP **************************************************
+
+@media (min-width:768px){
+
+    .descritpion__equipments{
+        margin-top: -10px;
+        display: flex;
+
+        .description{
+            margin-bottom: 0;
+            width: 50%;
+            
+            .description__collapse{
+                margin-bottom: 25px;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                
+                .collapse__container{
+                    width: 90%;
+                    
+                    .collapse, .ouvert__collapse{
+                        height: 52px;
+                        width: 100%;
+                        border-radius: 10px;
+                        
+                        .collapse__title, .ouvert__collapse__title{
+                            font-size: 18px;
+                            padding: 13px 0 13px 20px;
+                            
+                            img{
+                                width: 30px;
+                                margin-right: 12px;
+                            }
+                        }
+                    }
+                    
+                    .ouvert__collapse__text{
+                        list-style: none;
+                        width: 100%;
+                        height: 100%;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 142.6%;
+                        padding: 40px 12px 27px 20px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+        
+        .equipments{
+            margin-bottom: 0;
+            width: 50%;
+            
+            .description__collapse{
+                margin-bottom: 25px;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                
+                .collapse__container{
+                    width: 90%;
+
+                    .collapse, .ouvert__collapse{
+                        height: 52px;
+                        width: 100%;
+                        border-radius: 10px;
+
+                        .collapse__title, .ouvert__collapse__title{
+                            font-size: 18px;
+                            padding: 13px 0 13px 20px;
+
+                            img{
+                                width: 30px;
+                                margin-right: 12px;
+                            }
+                        }
+                    }
+                    .ouvert__collapse__text{
+                        list-style: none;
+                        width: 100%;
+                        height: 100%;
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 142.6%;
+                        padding: 40px 12px 27px 20px;
+                        border-radius: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

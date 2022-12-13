@@ -1,0 +1,26 @@
+.prev__collapse{
+    margin-bottom: 20px;
+}
+.aboutBackground {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.3) url(../../images/Banniere_page_aPropos_mobile.png);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 223px;
+    margin-top: 20px;
+    border-radius: 10px;
+
+    @media (min-width: 769px) {
+        margin-bottom: 15px;
+        background: rgba(0, 0, 0, 0.3) url(../../images/Banniere_page_aPropos.png);
+        background-blend-mode: darken;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 25px;
+    }
+}

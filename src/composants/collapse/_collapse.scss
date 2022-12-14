@@ -1,3 +1,5 @@
+.descritpion__equipments{
+margin-top: 10px;
 .description{
     margin-bottom: 15px;
     
@@ -58,12 +60,14 @@
         }
     }
 }
+}
 
 //********************************** DESKTOP **************************************************
 
 @media (min-width:768px){
 
     .descritpion__equipments{
+        gap: 76px;
         margin-top: -10px;
         display: flex;
 
@@ -78,7 +82,7 @@
                 flex-direction: column;
                 
                 .collapse__container{
-                    width: 90%;
+                    width: 100%;
                     
                     .collapse, .ouvert__collapse{
                         height: 52px;
@@ -104,7 +108,7 @@
                         font-weight: 400;
                         font-size: 18px;
                         line-height: 142.6%;
-                        padding: 40px 12px 27px 20px;
+                        padding: 40px 12px 53px 20px;
                         border-radius: 10px;
                     }
                 }
@@ -123,7 +127,7 @@
                 align-items: flex-end;
                 
                 .collapse__container{
-                    width: 90%;
+                    width: 100%;
 
                     .collapse, .ouvert__collapse{
                         height: 52px;

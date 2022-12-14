@@ -40,7 +40,6 @@ export default function Carrousel({ image }) {
         />
       )}
 
-      {/* affiche le numero de l'image. exemple 1/5 */}
       {image.map((image, index) => {
         return (
           <div

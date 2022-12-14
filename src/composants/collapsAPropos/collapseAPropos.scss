@@ -1,13 +1,16 @@
-.description{
+.container_CollapseApropos{
+    margin-top: 19px;
+    display: grid;
+    gap: 20px;
     margin-bottom: 15px;
     
-    &__collapseApropos{
-        margin-bottom: 20px;
-        .collapseApropos__container{
-            
-            .collapseApropos, .ouvert__collapseApropos{
+    .description__collapse{
+        // margin-bottom: 20px;
+
+        .collapse__container{
+            .collapse, .ouvert__collapse{
                 position: relative;
-                top: 10px;
+                // top: 10px;
                 background-color: #FF6060;
                 color: #FFFFFF;
                 display: flex;
@@ -64,37 +67,30 @@
 
 @media (min-width:768px){
     .container_CollapseApropos{
-        margin-top: 21.61px;
-        .description{
-        margin-bottom: 15px;
+        margin-right: 109px;
+        gap: 31px;
+        margin-top: 31px;
+        margin-left: 108px;
         
-        &__collapseApropos{
-            width: 80%;
-            margin-left: auto;
-            margin-right: auto;
-            .collapseApropos__container{
-                
-                .collapseApropos, .ouvert__collapseApropos{
-                    height: 47px;
+        .description{
+            margin-bottom: 15px;
+        
+            &__collapse{
+                .collapse__container{
                     
-                    &__title{
-                        padding: 5.61px 0 7.39px 18.08px;
-                        font-size: 24px;
-                    }
-                    img{
-                    }
-                    
-                    &__text{
-                        font-size: 24px;
-                        ul{
-                        }
+                    .collapse, .ouvert__collapse{
+                        height: 47px;
                         
-                        &__list{
+                        &__title{
+                            padding: 5.61px 0 7.39px 18.08px;
+                            font-size: 24px;
+                        }
+                        &__text{
+                            font-size: 24px;
                         }
                     }
                 }
             }
         }
     }
-}
 }

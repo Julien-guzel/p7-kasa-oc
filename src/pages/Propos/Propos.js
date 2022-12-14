@@ -1,12 +1,14 @@
 import AproposBanniere from '../../composants/AproposBanniere/AproposBanniere'
 import AproposTableau from '../../datas/AproposTableau.json'
-import CollapseApropos from '../../composants/collapsAPropos/CollapseAPropos'
+import CollapseApropos from '../../composants/collapse/Collapse'
 
 const About = () => {
   return (
     <>
       <AproposBanniere />
+      
       <div className="container_CollapseApropos">
+
       {AproposTableau.map((collapse, index) => (
         
         <CollapseApropos
@@ -15,6 +17,8 @@ const About = () => {
           description={collapse.aboutText} //   inject la description dans 'Collapse'
         />
       ))}
+
+
       </div>
     </>
   )

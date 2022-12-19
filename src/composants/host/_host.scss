@@ -5,6 +5,7 @@
         
         &__tags{
             width: 50%;
+            margin-bottom: 16px;
             
             .title{
                 width: 187%;
@@ -48,11 +49,11 @@
             text-align: right;
             width: 30%;
             font-size: 12px;
-            margin-right: 12px;
+            // margin-right: 12px;
             color: #FF6060;
+            margin: 0 10.5px 0 0;
         }
         &__image{
-            margin: 3px;
             border-radius: 50%;
             width: 32px;
             height: 32px;
@@ -70,9 +71,9 @@
             flex-direction: row;
             justify-content: space-between;
             
-            // &__tag{
-            //     width: 80%;
-            // }
+            &__tags{
+                margin-bottom: 0px;
+            }
 
             .title{
                 width: 130%;
@@ -95,6 +96,7 @@
                 }
                 
                 .host__rating{
+                    margin-top: 23px;
                     display: flex;
                     flex-direction: column;
                     
@@ -110,7 +112,7 @@
                             font-weight: 500;
                             font-size: 18px;
                             line-height: 142.6%;
-                            margin: 25px;
+                            margin: 0 10px 0 0;
                         }
                         
                         &__image{

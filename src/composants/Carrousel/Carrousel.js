@@ -22,7 +22,7 @@ export default function Carrousel({ image }) {
 
   return (
     <section className="carrousel">
-      {/* affiche les fleches de passer les images qui si le nombre d'image est superieur a 1 */}
+      {/* affiche les fleches pour passer les images que si le nombre d'image est superieur a 1 */}
       {nombreImage > 1 && (
         <img
           className="carrousel__fleche__right"
@@ -45,7 +45,7 @@ export default function Carrousel({ image }) {
           <div
             key={index}
             // l'image afficher auras comme className 'carrousel__image-afficher'
-            // les images non afficher aura comme className 'carrousel__image-cacher'
+            // les images non afficher auront comme className 'carrousel__image-cacher'
             className={
               imageAfficher === index
                 ? 'carrousel__image-afficher'

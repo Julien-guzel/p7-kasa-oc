@@ -1,4 +1,5 @@
 export default function Card({ imageCarte, titre }) {
+	
 	return (
 		<article className="carte-logement">
 			<img src={imageCarte} alt="location" />
